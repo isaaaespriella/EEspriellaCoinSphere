@@ -1,4 +1,5 @@
 package com.example.coinsphere.ui.theme
+import com.example.coinsphere.R
 
 import android.app.Activity
 import android.os.Build
@@ -52,7 +53,7 @@ fun CoinSphereTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = poppinsTypo,
         content = content
     )
 }
