@@ -55,8 +55,7 @@ val poppinsTypo = Typography(
         lineHeight = 32.sp
     ),
     titleLarge = TextStyle(
-        fontWeight = FontWeight.Normal,   // antes W700
-        fontFamily = poppinsFontFamily,
+        fontWeight = FontWeight.Bold,
         fontSize = 22.sp,
         lineHeight = 28.sp
     ),
