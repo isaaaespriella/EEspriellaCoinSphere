@@ -10,6 +10,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -20,16 +21,16 @@ import com.example.coinsphere.ui.theme.TextMain
 @Composable
 fun Boxes() {Column(
     modifier = Modifier
-        .padding(16.dp)
+        .padding(13.dp)
 ) {
     // Global Market Cap
     Box(
         modifier = Modifier
             .fillMaxWidth()
             .padding(bottom = 4.dp)
+            .clip(RoundedCornerShape(17.dp))
             .background(
                 color = Surface,
-                shape = RoundedCornerShape(17.dp)
             )
             .padding(16.dp)
     ) {
@@ -37,12 +38,12 @@ fun Boxes() {Column(
             Text(
                 text = "Global Market Cap",
                 color = TextDim,
-                fontSize = 14.sp
+                fontSize = 12.sp
             )
             Text(
                 text = "$2.18T",
                 color = TextMain,
-                fontSize = 18.sp,
+                fontSize = 19.sp,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 4.dp)
             )
@@ -54,9 +55,9 @@ fun Boxes() {Column(
         modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 4.dp)
+            .clip(RoundedCornerShape(17.dp))
             .background(
-                color = Surface,
-                shape = RoundedCornerShape(17.dp)
+                color = Surface
             )
             .padding(16.dp)
     ) {
@@ -64,12 +65,12 @@ fun Boxes() {Column(
             Text(
                 text = "Fear & Greed",
                 color = TextDim,
-                fontSize = 14.sp
+                fontSize = 12.sp
             )
             Text(
                 text = "Neutral (54)",
                 color = TextMain,
-                fontSize = 18.sp,
+                fontSize = 19.sp,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 4.dp)
             )
@@ -81,9 +82,9 @@ fun Boxes() {Column(
         modifier = Modifier
             .fillMaxWidth()
             .padding(vertical = 4.dp)
+            .clip(RoundedCornerShape(17.dp))
             .background(
-                color = Surface,
-                shape = RoundedCornerShape(17.dp)
+                color = Surface
             )
             .padding(16.dp)
     ) {
@@ -91,12 +92,12 @@ fun Boxes() {Column(
             Text(
                 text = "Altcoin Season",
                 color = TextDim,
-                fontSize = 14.sp
+                fontSize = 12.sp
             )
             Text(
                 text = "No",
                 color = TextMain,
-                fontSize = 18.sp,
+                fontSize = 19.sp,
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier.padding(top = 4.dp)
             )

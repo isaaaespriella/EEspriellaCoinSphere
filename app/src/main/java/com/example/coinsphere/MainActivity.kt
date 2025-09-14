@@ -25,12 +25,15 @@ import com.example.coinsphere.models.cryptos
 import com.example.coinsphere.ui.theme.Background
 import com.example.coinsphere.ui.theme.CoinSphereTheme
 import com.example.coinsphere.ui.theme.TextMain
+import com.example.coinsphere.ui.theme.poppinsFontFamily
+import com.example.coinsphere.ui.theme.poppinsTypo
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             CoinSphereTheme {
-                MainPage()   // aquí llamas a tu composable
+                MainPage()
             }
         }
     }
@@ -45,11 +48,12 @@ fun MainPage(){
     ) {
         Text(
             text = "CoinSphere",
-            style = MaterialTheme.typography.headlineMedium,
-            color = TextMain,
             fontWeight = FontWeight.Bold,
+            style = MaterialTheme.typography.titleLarge,
+            fontSize = 20.sp,
+            color = TextMain,
             modifier = Modifier
-                .padding(14.dp)
+                .padding(top = 24.dp, start = 20.dp)
         )
 
         Boxes()

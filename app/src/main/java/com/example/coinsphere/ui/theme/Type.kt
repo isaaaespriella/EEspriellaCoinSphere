@@ -9,8 +9,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
 val poppinsFontFamily = FontFamily(
-    Font(com.example.coinsphere.R.font.poppins_bold),
     Font(com.example.coinsphere.R.font.poppins_regular),
+    Font(com.example.coinsphere.R.font.poppins_bold),
     Font(com.example.coinsphere.R.font.poppins_light),
     Font(com.example.coinsphere.R.font.poppins_black)
 )
@@ -55,24 +55,25 @@ val poppinsTypo = Typography(
         lineHeight = 32.sp
     ),
     titleLarge = TextStyle(
-        fontWeight = FontWeight.W700,
+        fontWeight = FontWeight.Normal,   // antes W700
         fontFamily = poppinsFontFamily,
         fontSize = 22.sp,
         lineHeight = 28.sp
     ),
     titleMedium = TextStyle(
-        fontWeight = FontWeight.W700,
+        fontWeight = FontWeight.Normal,   // antes W700
         fontFamily = poppinsFontFamily,
         fontSize = 16.sp,
         lineHeight = 24.sp,
         letterSpacing = 0.15.sp
     ),
     titleSmall = TextStyle(
-        fontWeight = FontWeight.W700,
+        fontWeight = FontWeight.Normal,   // antes W700
         fontFamily = poppinsFontFamily,
         fontSize = 14.sp,
         lineHeight = 20.sp,
         letterSpacing = 0.1.sp
+
     ),
     bodyLarge = TextStyle(
         fontWeight = FontWeight.Normal,
