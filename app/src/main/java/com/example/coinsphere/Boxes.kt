@@ -20,7 +20,6 @@ import com.example.coinsphere.ui.theme.TextMain
 @Composable
 fun Boxes() {Column(
     modifier = Modifier
-        .fillMaxSize()
         .padding(16.dp)
 ) {
     // Global Market Cap
